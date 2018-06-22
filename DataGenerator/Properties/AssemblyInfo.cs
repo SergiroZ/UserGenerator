@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("UserGenerator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("DataGenerator")]
+[assembly: AssemblyDescription("DLL.DataGenerator")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Sergiro")]
-[assembly: AssemblyProduct("UserGenerator")]
+[assembly: AssemblyProduct("DataGenerator")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("Sergiro")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("0c34322a-c0bb-4fb1-bd92-edba4ab80982")]
+[assembly: Guid("e4819de2-292d-4000-ba88-f3ea2e84e1e1")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
