@@ -10,7 +10,7 @@ namespace UserGenerator
         private static void Main(string[] args)
         {
             JsonDeserialize des = new JsonDeserialize();
-            var collection = des.GetManyDiffUser(30);
+            var collection = des.GetManyDiffUser(50);
 
             if (collection != null)
             {
