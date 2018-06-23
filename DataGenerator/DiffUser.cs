@@ -152,14 +152,14 @@ namespace DLL.DataGenerator
             }
         }
 
-        public async Task<RootObject> GetSingleDiffUser()
+        public RootObject GetSingleDiffUser()
         {
-            return await Task.Run(() => DeserializeAsync(url + 1 + "&nat=us,gb"));
+            return Task.Run(() => DeserializeAsync(url + 1 + "&nat=us,gb")).Result;
         }
 
-        public async Task<RootObject> GetManyDiffUser(int take)
+        public RootObject GetManyDiffUser(int take)
         {
-            return await Task.Run(() => DeserializeAsync(url + take + "&nat=us,gb"));
+            return Task.Run(() => DeserializeAsync(url + take + "&nat=us,gb")).Result;
         }
     }
 }

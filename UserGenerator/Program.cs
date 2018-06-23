@@ -10,28 +10,28 @@ namespace UserGenerator
         private static void Main(string[] args)
         {
             JsonDeserialize des = new JsonDeserialize();
-            var collection = des.GetManyDiffUser(3);
+            var collection = des.GetManyDiffUser(30);
 
-            if (collection.Result != null)
+            if (collection != null)
             {
-                foreach (var item in collection.Result.results)
+                foreach (var item in collection.results)
                 {
                     Console.WriteLine(item.name.first + " " + item.name.last);
                     Console.WriteLine(item.dob.date);
-                    Console.Write(collection.Result.info.results);
-                    Console.WriteLine(" " + collection.Result.info.seed + " " + collection.Result.info.version);
+                    Console.Write(collection.info.results);
+                    Console.WriteLine(" " + collection.info.seed + " " + collection.info.version);
                     Console.WriteLine();
                 }
             }
 
             Console.WriteLine("***********************************");
             var singler = des.GetSingleDiffUser();
-            if (singler.Result != null)
+            if (singler != null)
             {
-                Console.WriteLine(singler.Result.results[0].name.first + " " + singler.Result.results[0].name.last);
-                Console.WriteLine(singler.Result.results[0].dob.date);
-                Console.Write(singler.Result.info.results);
-                Console.WriteLine(" " + singler.Result.info.seed + " " + singler.Result.info.version);
+                Console.WriteLine(singler.results[0].name.first + " " + singler.results[0].name.last);
+                Console.WriteLine(singler.results[0].dob.date);
+                Console.Write(singler.info.results);
+                Console.WriteLine(" " + singler.info.seed + " " + singler.info.version);
             }
 
             Console.WriteLine();
